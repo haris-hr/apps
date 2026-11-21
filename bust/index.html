@@ -1,0 +1,224 @@
+<!doctype html>
+<!--
+  Bust's support page and privacy policy, one page for both App Store URLs:
+    Support URL:         https://haris-hr.github.io/apps/bust/
+    Privacy Policy URL:  https://haris-hr.github.io/apps/bust/#privacy
+  Published from the public repository haris-hr/apps, folder bust/ (21 November 2026):
+  after a change, copy this folder (index.html and icon.png) there and push.
+
+  The support address and the copyright name are filled in (20 November 2026).
+
+  The page loads nothing from anywhere else: no fonts, scripts or trackers, so the
+  privacy policy is true of the page itself.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bust: help and privacy</title>
+<meta name="description" content="Help with Bust, the daily card game, and its privacy policy. Bust collects no personal data.">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  /* The app's own palette (App/Views/Theme.swift), light and dark. */
+  :root {
+    color-scheme: light dark;
+    --bg: #E9EBF2;
+    --surface: #FFFFFF;
+    --line: #D6D9E4;
+    --ink: #171A26;
+    --muted: #5E6578;
+    --accent: #D9780F;
+    --accent-text: #A35200;
+    --display: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --text: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0F121D;
+      --surface: #181C2C;
+      --line: #2B3147;
+      --ink: #EEF0F7;
+      --muted: #9BA2B9;
+      --accent: #F2A53A;
+      --accent-text: #F2A53A;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.55 var(--text);
+  }
+  .page { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+  header img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  h1 { font: 900 40px/1.05 var(--display); margin: 0; letter-spacing: -0.01em; }
+  .tagline { margin: 4px 0 0; color: var(--muted); }
+
+  nav { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+  nav a {
+    display: inline-block; padding: 10px 16px; min-height: 44px;
+    border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
+    color: var(--ink); font-weight: 600; text-decoration: none;
+  }
+  nav a:hover { border-color: var(--accent); }
+
+  section {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+    padding: 24px 20px; margin-bottom: 20px;
+  }
+  h2 { font: 900 26px/1.2 var(--display); margin: 0 0 4px; }
+  h3 { font-size: 17px; line-height: 1.35; margin: 22px 0 4px; }
+  p, ul { margin: 8px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .meta { color: var(--muted); font-size: 15px; margin-top: 0; }
+  a { color: var(--accent-text); }
+  a:focus-visible, nav a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  details { border-top: 1px solid var(--line); }
+  details:last-of-type { border-bottom: 1px solid var(--line); }
+  summary {
+    cursor: pointer; list-style: none; padding: 14px 28px 14px 0; position: relative;
+    font-weight: 600; min-height: 44px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+"; position: absolute; right: 4px; top: 12px;
+    font: 700 20px/1 var(--display); color: var(--accent-text);
+  }
+  details[open] summary::after { content: "\2212"; }
+  details > p { margin: 0 0 14px; color: var(--ink); }
+
+  .contact {
+    margin-top: 20px; padding: 16px; border-radius: 12px;
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+  }
+  .contact p { margin: 0; }
+
+  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 28px; }
+
+  @media (max-width: 420px) {
+    h1 { font-size: 34px; }
+    header img { width: 60px; height: 60px; border-radius: 14px; }
+    section { padding: 20px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <img src="icon.png" alt="" width="72" height="72">
+    <div>
+      <h1>Bust</h1>
+      <p class="tagline">One deck a day. Push your luck.</p>
+    </div>
+  </header>
+
+  <nav aria-label="On this page">
+    <a href="#support">Help</a>
+    <a href="#privacy">Privacy policy</a>
+  </nav>
+
+  <main>
+    <section id="support" aria-labelledby="support-title">
+      <h2 id="support-title">Help</h2>
+      <p class="meta">Bust is a daily card game for iPhone. Every day there is one deck, the same for everyone. Flip cards to build your table, and bank before a repeated number busts the round.</p>
+
+      <details>
+        <summary>When does a new deck arrive?</summary>
+        <p>At midnight where you are. Everyone on the same date plays the same deck, card for card, so results can be compared.</p>
+      </details>
+      <details>
+        <summary>Does sharing my result spoil the deck for others?</summary>
+        <p>No. A shared result shows your score and whether each round was banked or bust, and nothing about the cards, so you can send it before your friends have played.</p>
+      </details>
+      <details>
+        <summary>Can I play today's deck again?</summary>
+        <p>No, each day's deck can be played once. After your run you can practise as much as you like, on a random deck or on yesterday's deck to see what you would do differently. Practice never counts toward your streak or stats.</p>
+      </details>
+      <details>
+        <summary>What does the percentage above the buttons mean?</summary>
+        <p>It is the chance that the next card busts the round, worked out from the cards still in the deck. The tracker under the buttons shows exactly which numbers are left.</p>
+      </details>
+      <details>
+        <summary>Who is the steady player?</summary>
+        <p>Eight computer players play every deck, each banking at one fixed bust chance, from 10% to 50%. The steady player is whichever of them scored best on that day's deck, so it is a high bar: it is picked once the cards are known. Match it and you played the deck as well as any fixed rule could; beat it and you did better than all eight.</p>
+      </details>
+      <details>
+        <summary>I missed a day. Is my streak gone?</summary>
+        <p>Not necessarily. You start with one freeze, which covers one missed day by itself, and every seven days of play earns another. You can hold one freeze at a time. Without one, missing a day starts the streak again; your best streak and the days you've played stay. Freezes are never sold.</p>
+      </details>
+      <details>
+        <summary>Why didn't my reminder arrive?</summary>
+        <p>The daily reminder is off until you turn it on: Bust offers it once after your first run, and the switch is in Your game (the chart button at the top). It never arrives on a day you've already played, and it stops after a week without opening Bust; opening the app sets it up again. If notifications for Bust are off in the Settings app, turn them on there.</p>
+      </details>
+      <details>
+        <summary>How do I add the widget?</summary>
+        <p>Touch and hold an empty spot on your Home Screen until the icons jiggle, tap the button at the top left (then Add Widget, if your iPhone asks), and search for Bust. For the Lock Screen, touch and hold it, tap Customize, and add Bust to the widgets.</p>
+      </details>
+      <details>
+        <summary>Will I lose my streak if I delete the app?</summary>
+        <p>Yes. Everything Bust keeps is stored only on your iPhone, so deleting the app deletes your days, streak and settings. Your iPhone's backups include them, and restoring a backup brings them back.</p>
+      </details>
+      <details>
+        <summary>Does Bust have ads or purchases?</summary>
+        <p>No. There are no ads, no purchases and no account. Nothing in the game can be bought, and points can't be won or exchanged for anything.</p>
+      </details>
+
+      <div class="contact">
+        <p>Something else, or something not working? Write to <a href="mailto:support.desk.global.outreach@gmail.com">support.desk.global.outreach@gmail.com</a>. Your iPhone model and iOS version help if something is broken.</p>
+      </div>
+    </section>
+
+    <section id="privacy" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Privacy policy</h2>
+      <p class="meta">Last updated 20 November 2026</p>
+      <p>Bust is a card game that runs entirely on your device. This policy explains what that means for your information.</p>
+
+      <h3>What Bust collects</h3>
+      <p>Only anonymous usage statistics, so we can see how the game is used and make it better. Bust has no accounts, no advertising and no tracking, and it never asks for your name, email, contacts or location.</p>
+      <p>The statistics are sent to TelemetryDeck GmbH, a German analytics service built for privacy. They record what is done in the game: that a daily deck was started or finished, its score and how many rounds were banked, practice runs, a tap on Share, which screens were opened, and whether the reminder, sound and widget are in use. Each comes with the app's version and the device's model, iOS version, language and settings such as text size. To count how many people play without knowing who they are, the app makes a random identifier for your installation, kept in the app's own storage, and scrambles it with a one-way hash before it is sent, so it can't be traced back to you or your device. It is not an identifier other apps can see, and deleting Bust deletes it. TelemetryDeck says it stores no IP addresses and uses no cookies.</p>
+      <p>The statistics are kept for as long as they are useful for improving Bust. Because they identify no one, they can't be looked up or deleted for a single person.</p>
+      <p>You can turn the statistics off at any time in the app, under Your game › Settings › Anonymous statistics. The game works the same without them, and without an internet connection: statistics collected offline wait on your device until it is back online.</p>
+
+      <h3>What Bust keeps on your device</h3>
+      <p>To work, the game stores a few things in its own storage on your iPhone:</p>
+      <ul>
+        <li>the days you have played, your scores and the decisions you made in each run;</li>
+        <li>your streak;</li>
+        <li>your settings, such as sound and the daily reminder time;</li>
+        <li>the moves of a daily run in progress, so you can pick it up again after closing the app;</li>
+        <li>a small summary of today (your streak and today's score) that the Bust widget reads to draw itself.</li>
+      </ul>
+      <p>Practice runs are not stored. None of this leaves your device, apart from the anonymous statistics described above. If you use iCloud or computer backups, it is included in those backups the same way as other app data. Deleting Bust deletes all of it.</p>
+
+      <h3>Notifications</h3>
+      <p>If you turn on the daily reminder, Bust asks for permission to send notifications and schedules them on your device. No server is involved, and you can turn the reminder off at any time in the app or in the Settings app.</p>
+
+      <h3>Children</h3>
+      <p>Bust collects no personal information from anyone, including children. The anonymous statistics are the same for every player and identify no one.</p>
+
+      <h3>This page</h3>
+      <p>This page loads nothing from other sites: no fonts, scripts, cookies or trackers.</p>
+
+      <h3>Changes</h3>
+      <p>If a future version of Bust changes any of this, for example by adding an online leaderboard, this policy will be updated before that version is released, and the App Store listing will say what is collected.</p>
+
+      <h3>Contact</h3>
+      <p>Questions about this policy: <a href="mailto:support.desk.global.outreach@gmail.com">support.desk.global.outreach@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bust</p>
+  </footer>
+</div>
+</body>
+</html>
